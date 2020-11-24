@@ -11,7 +11,7 @@ targetCustomizations:
 - name: test
   helm:
     values:
-      replicas: 4
+      replicas: 3
   clusterSelector:
     matchLabels:
       env: test
@@ -19,8 +19,7 @@ targetCustomizations:
 - name: prod
   helm:
     values:
-      serviceType: LoadBalancer
-      replicas: 3
+      replicas: 6
   clusterSelector:
     matchLabels:
       env: prod
