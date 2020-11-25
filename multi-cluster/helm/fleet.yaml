@@ -12,6 +12,7 @@ targetCustomizations:
   helm:
     values:
       replicas: 3
+      replication: false
   clusterSelector:
     matchLabels:
       env: test
@@ -20,6 +21,7 @@ targetCustomizations:
   helm:
     values:
       replicas: 6
+      replication: false
   clusterSelector:
     matchLabels:
       env: prod
