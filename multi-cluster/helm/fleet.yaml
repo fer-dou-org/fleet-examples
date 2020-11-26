@@ -11,7 +11,7 @@ targetCustomizations:
 - name: test
   helm:
     values:
-      replicas: 3
+      replicas: 2
       replication: false
   clusterSelector:
     matchLabels:
@@ -20,7 +20,7 @@ targetCustomizations:
 - name: prod
   helm:
     values:
-      replicas: 6
+      replicas: 4
       replication: false
   clusterSelector:
     matchLabels:
